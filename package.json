@@ -1,0 +1,19 @@
+{
+  "name": "nano-hackathon",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "gulp dev"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "browser-sync": "^2.26.13",
+    "csshake": "^1.5.3",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^5.0.0",
+    "scrollmagic": "^2.0.8",
+    "serve": "^11.3.2"
+  }
+}

@@ -1,0 +1,48 @@
+@import './variable.scss';
+@import './color.scss';
+@import './responsive.scss';
+@import './font.scss';
+
+@mixin page-container {
+    width: 100%;
+    margin: auto;
+    padding-left: 48px;
+    padding-right: 48px;
+    @include respond-to((max-width: $max-tablet-breakpoint)) {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    @include respond-to((max-width: $max-mobile-breakpoint)) {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@mixin button($height-size: null, $width-size: null, $padding-horizontal: null) {
+    background-color: $light;
+    font-weight: 700;
+    font-size: 1.6rem;
+    font-family: supermarket;
+    padding: 0 48px;
+    border: 0;
+    cursor: pointer;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+
+
+    @if $height-size == 'small' {
+        height: 36px;
+    }
+    @if $height-size == 'medium' {
+        height: 48px;
+    }
+    @if $height-size == 'large' {
+        height: 72px;
+    }
+
+    /* Width Size Rules */
+    @if $width-size != null {
+        width: $width-size;
+    }
+}

@@ -1,0 +1,10 @@
+$pc-max-width: 1920px;
+$min-pc-breakpoint: 1345px - 1px;
+
+$max-tablet-breakpoint: 960px - 1px;
+$max-mobile-breakpoint: 560px - 1px;
+
+$full-navigation-breakpoint: 1000px;
+
+$transition-time: 0.35s;
+$modal-animation: transform $transition-time ease-in-out, opacity $transition-time ease-in-out;
