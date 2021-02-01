@@ -1,10 +1,34 @@
-$pc-max-width: 1920px;
+$pc-max-width: 1921px;
 $min-pc-breakpoint: 1345px - 1px;
 
 $max-tablet-breakpoint: 960px - 1px;
 $max-mobile-breakpoint: 560px - 1px;
 
-$full-navigation-breakpoint: 1000px;
+$max-pc-100-breakpoint: 5120px;
+$max-pc-80-breakpoint: 4096px;
+$max-pc-75-breakpoint: 3840px;
+$max-pc-60-breakpoint: 3000px;
+$max-pc-55-breakpoint: 2880px;
+$max-pc-50-breakpoint: 2560px;
+$max-pc-45-breakpoint: 2304px;
+$max-pc-40-breakpoint: 2160px;
+$max-pc-35-breakpoint: 1920px;
+$max-pc-30-breakpoint: 1600px;
+$max-pc-25-breakpoint: 1440px;
+$max-pc-20-breakpoint: 1366px;
 
-$transition-time: 0.35s;
-$modal-animation: transform $transition-time ease-in-out, opacity $transition-time ease-in-out;
+$max-tablet-100-breakpoint: 1280px;
+$max-tablet-95-breakpoint: 1200px;
+$max-tablet-85-breakpoint: 1080px;
+$max-tablet-80-breakpoint: 1024px;
+$max-tablet-70-breakpoint: 900px;
+$max-tablet-65-breakpoint: 800px;
+$max-tablet-60-breakpoint: 768px;
+$max-tablet-50-breakpoint: 600px;
+
+$max-mobile-100-breakpoint: 540px;
+$max-mobile-80-breakpoint: 480px;
+$max-mobile-75-breakpoint: 400px;
+$max-mobile-70-breakpoint: 384px;
+$max-mobile-65-breakpoint: 360px;
+$max-mobile-60-breakpoint: 320px;

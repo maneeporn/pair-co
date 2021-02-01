@@ -1,0 +1,218 @@
+@import '../font.scss';
+@import '../mixnis.scss';
+@import '../color.scss';
+@import '../variable.scss';
+
+.container {
+    section.all-course {
+        & > .logo {
+            @include page-container;
+            margin-top: 60px;
+            transform: translateX(-8%);
+            @include respond-to((max-width: $max-pc-40-breakpoint)){
+                transform: translateX(0);
+            }
+            @include respond-to((max-width: $max-pc-25-breakpoint)){
+                margin-top: 50px;
+            }
+            @include respond-to((max-width: $max-tablet-70-breakpoint)){
+                margin-top: 44px;
+            }
+
+            & > img {
+                width: 233px;
+                @include respond-to((max-width: $max-tablet-70-breakpoint)){
+                    width: 87px;
+                }
+            }
+        }
+        & > .content {
+            @include page-container;
+            margin-top: 280px;
+            margin-bottom: 874px;
+            @include respond-to((max-width: $max-pc-80-breakpoint)){
+                margin-bottom: 686px;
+            }
+            @include respond-to((max-width: $max-pc-50-breakpoint)){
+                margin-bottom: 498px;
+            }
+            @include respond-to((max-width: $max-pc-25-breakpoint)){
+                margin-top: 142px;
+                margin-bottom: 354px;
+            }
+            @include respond-to((max-width: $max-tablet-100-breakpoint)){
+                margin-bottom: calc(55%);
+            }
+            @include respond-to((max-width: $max-tablet-95-breakpoint)){
+                margin-bottom: calc(60%);
+            }
+            @include respond-to((max-width: $max-tablet-80-breakpoint)){
+                margin-bottom: calc(70%);
+            }
+            @include respond-to((max-width: $max-tablet-50-breakpoint)){
+                margin-top: 48px;
+            }
+            @include respond-to((max-width: $max-mobile-100-breakpoint)){
+                margin-bottom: calc(75%);
+                padding: 8px;
+            }
+            & > .text {
+                font-family: supermarket;
+                color: white;
+                @include respond-to((max-width: $max-pc-35-breakpoint)){
+                    margin-left: 128px;
+                }
+                @include respond-to((max-width: $max-pc-30-breakpoint)){
+                    margin-left: 96px;
+                }
+                @include respond-to((max-width: $max-pc-25-breakpoint)){
+                    margin-left: 68px;
+                }
+                @include respond-to((max-width: $max-tablet-100-breakpoint)){
+                    margin-left: 0;
+                    text-align: center;
+                }
+                & > .title {
+                    font-size: 6rem;
+                    margin-bottom: 30px;
+                    @include respond-to((max-width: $max-pc-30-breakpoint)){
+                        font-size: 4.5rem;
+                    }
+                    @include respond-to((max-width: $max-tablet-60-breakpoint)){
+                        font-size: 3rem;
+                    }
+                    @include respond-to((max-width: $max-mobile-100-breakpoint)){
+                        font-size: 2.25rem;
+                    }
+                }
+                & > .description {
+                    font-size: 1.7rem;
+                    margin-bottom: 99px;
+                    @include respond-to((max-width: $max-pc-30-breakpoint)){
+                        font-size: 1.25rem;
+                    }
+                    @include respond-to((max-width: $max-tablet-60-breakpoint)){
+                        font-size: 1.5rem;
+                        display: grid;
+                        row-gap: 8px;
+                        margin-bottom: 50px;
+                    }
+                    @include respond-to((max-width: $max-tablet-50-breakpoint)){
+                        font-size: 1.125rem;
+                        margin-bottom: 30px;
+                    }
+                }
+                & > .btn {
+                    font-size: 1.8rem;
+                    @include button($height-size: "large");
+                    color: #018BF6;
+                    @include respond-to((max-width: $max-tablet-100-breakpoint)){
+                        @include button($height-size: "medium");
+                        font-size: 1.125rem;
+                        margin: auto;
+                    }
+                    @include respond-to((max-width: $max-mobile-80-breakpoint)){
+                    padding: 0 18px;
+                    }
+                }
+                & > .arrow_down {
+                    display: none;
+                    @include respond-to((max-width: $max-tablet-100-breakpoint)){
+                        display: block;
+                        width: 36px;
+                        margin: auto;
+                        margin-top: 24px;
+                    }
+                }
+            }
+            & > figure {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                left: 0;
+                transform: translateY(-11%);
+                max-width: 1428px;
+                margin-left: calc(41%);
+                @include respond-to((max-width: $max-pc-80-breakpoint)){
+                    transform: translateY(-8%);
+                    margin-left: calc(40%);
+                }
+                @include respond-to((max-width: $max-pc-75-breakpoint)){
+                    transform: translateY(-6%);
+                }
+                @include respond-to((max-width: $max-pc-60-breakpoint)){
+                    transform: translateY(-4%);
+                    margin-left: calc(36%);
+                }
+                @include respond-to((max-width: $max-pc-50-breakpoint)){
+                    transform: translateY(-2%);
+                }
+                @include respond-to((max-width: $max-pc-40-breakpoint)){
+                    margin-left: calc(34%);
+                }
+                @include respond-to((max-width: $max-pc-35-breakpoint)){
+                    max-width: 1202px;
+                    padding-right: 64px;
+                    margin-left: calc(40%);
+                    transform: translateY(-20%);
+                }
+                @include respond-to((max-width: $max-pc-30-breakpoint)){
+                    max-width: 1048px;
+                    padding-right: 0;
+                    margin-left: calc(34%);
+                    transform: translateY(-16%);
+                }
+                @include respond-to((max-width: $max-pc-25-breakpoint)){
+                    max-width: 896px;
+                    margin-left: calc(38%);
+                    transform: translateY(-18%);
+                }
+                @include respond-to((max-width: $max-pc-20-breakpoint)){
+                    margin-left: calc(40%);
+                    transform: translateY(-20%);
+                    padding-right: 96px;
+                }
+            
+                @include respond-to((max-width: $max-tablet-100-breakpoint)){
+                    transform: translateY(-4%);
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding-right: 0px;
+                    right: 0;
+                }
+                @include respond-to((max-width: $max-tablet-85-breakpoint)){
+                    transform: translateY(-2%);
+                }
+                @include respond-to((max-width: $max-tablet-70-breakpoint)){
+                    padding: 16px;
+                    transform: translateY(2%);
+                }
+                @include respond-to((max-width: $max-tablet-60-breakpoint)){
+                    padding: 0;
+                    width: 110%;
+                    transform: translateY(4%) translateX(-8%);
+                }
+                @include respond-to((max-width: $max-mobile-100-breakpoint)){
+                    transform: translateY(4%) translateX(-5%);
+                }
+
+                & > img {
+                    width: 100%;
+                }
+            }
+        }
+        & > .background {
+            @include respond-to((max-width: $max-pc-35-breakpoint)){
+                transform: skewY(-15deg);
+            }
+            background: linear-gradient(90deg, #018BF6, #34DCFC);
+            transform: skewY(-5deg);
+            transform-origin: bottom left;
+            width: 300vw;
+            min-height: 100%;
+            position: absolute;
+            bottom: 0;
+            z-index: -1;
+        } 
+    }
+}
