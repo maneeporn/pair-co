@@ -1,0 +1,177 @@
+@import '../font.scss';
+@import '../mixnis.scss';
+@import '../color.scss';
+@import '../variable.scss';
+
+.container {
+    & > section.more-course {
+        transform: translateY(350%);
+        transform-origin: bottom left;
+        width: 100vw;
+        position: absolute;
+        bottom: 0;
+        z-index: 2;
+        @include respond-to((max-width: $max-tablet-100-breakpoint)){
+            transform: translateY(500%);
+        }
+        @include respond-to((max-width: $max-mobile-100-breakpoint)){
+            transform: translateY(700%);
+        }
+        & > .content {
+            transform: skewY(0);
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            height: 383px;
+            @include page-container;
+            justify-content: center;
+            @include respond-to((max-width: $max-tablet-100-breakpoint)){
+                height: 268px;
+            }
+            @include respond-to((max-width: $max-mobile-100-breakpoint)){
+                height: 150px;
+            }
+            & > div:first-child {
+                @include respond-to((max-width: $max-pc-60-breakpoint)){
+                    margin-top: -8%;
+                }
+                @include respond-to((max-width: $max-pc-50-breakpoint)){
+                    margin-top: -6%;
+                }
+                @include respond-to((max-width: $max-pc-45-breakpoint)){
+                    margin-top: -12%;
+                }
+                @include respond-to((max-width: $max-pc-35-breakpoint)){
+                    margin-top: -30%;
+                }
+                @include respond-to((max-width: $max-pc-30-breakpoint)){
+                    margin-top: -48%;
+                }
+                @include respond-to((max-width: $max-pc-25-breakpoint)){
+                    margin-top: -56%;
+                }
+                @include respond-to((max-width: $max-tablet-100-breakpoint)){
+                    margin-top: -26%;
+                }
+                @include respond-to((max-width: $max-tablet-80-breakpoint)){
+                    margin-top: -42%;
+                }
+                @include respond-to((max-width: $max-tablet-65-breakpoint)){
+                    margin-top: -54%;
+                }
+                @include respond-to((max-width: $max-tablet-50-breakpoint)){
+                    margin-top: -95%;
+                }
+                @include respond-to((max-width: $max-mobile-100-breakpoint)){
+                    margin-top: -80%;
+                }
+                @include respond-to((max-width: $max-mobile-80-breakpoint)){
+                    margin-top: -114%;
+                }
+                @include respond-to((max-width: $max-mobile-75-breakpoint)){
+                    margin-top: -166%;
+                }
+                @include respond-to((max-width: $max-mobile-70-breakpoint)){
+                    margin-top: -172%;
+                }
+                @include respond-to((max-width: $max-mobile-65-breakpoint)){
+                    margin-top: -198%;
+                }
+                @include respond-to((max-width: $max-mobile-60-breakpoint)){
+                    margin-top: -248%;
+                }
+                & > .title {
+                    text-align: center;
+                    color: white;
+                    font-size: 3rem;
+                    font-family: supermarket;
+                    @include respond-to((max-width: $max-tablet-100-breakpoint)){
+                        font-size: 2rem;
+                    }
+                    @include respond-to((max-width: $max-tablet-50-breakpoint)){
+                        display: grid;
+                        row-gap: 12px;
+                    }
+                    @include respond-to((max-width: $max-mobile-100-breakpoint)){
+                        font-size: 1.125rem;
+                    }
+                }
+                & > .btn {
+                    @include button($height-size: "large");
+                    color: $main-color-dark;
+                    margin: auto;
+                    margin-top: 35px;
+                    @include respond-to((max-width: $max-tablet-100-breakpoint)){
+                        @include button($height-size: "medium");
+                        padding: 3px 48px 0 48px;
+                        font-size: 1.125rem;
+                        font-weight: 400;
+                    }
+                    @include respond-to((max-width: $max-mobile-100-breakpoint)){
+                        margin-top: 16px;
+                        height: 40px;
+                        padding: 3px 28px 0 28px;
+                    }
+                }
+            }
+        }
+        & > .background {
+            background: linear-gradient(90deg, #018BF6, #34DCFC);
+            transform: skewY(-5deg) translateY(50%);
+            transform-origin: bottom left;
+            width: 100vw;
+            min-height: 100%;
+            position: absolute;
+            bottom: 0;
+            z-index: 0;
+            @include respond-to((max-width: $max-pc-80-breakpoint)){
+                transform: skewY(-5deg) translateY(38%);
+            }
+            @include respond-to((max-width: $max-pc-60-breakpoint)){
+                transform: skewY(-5deg) translateY(8%);
+            }
+            @include respond-to((max-width: $max-pc-45-breakpoint)){
+                transform: skewY(-5deg) translateY(-10%);
+            }
+            @include respond-to((max-width: $max-pc-35-breakpoint)){
+                transform: skewY(-15deg) translateY(-18%);
+            }
+            @include respond-to((max-width: $max-pc-30-breakpoint)){
+                transform: skewY(-15deg) translateY(-52%);
+            }
+            @include respond-to((max-width: $max-pc-25-breakpoint)){
+                transform: skewY(-15deg) translateY(-62%);
+            }
+            @include respond-to((max-width: $max-tablet-100-breakpoint)){
+                transform: skewY(-15deg) translateY(-6%);
+            }
+            @include respond-to((max-width: $max-tablet-80-breakpoint)){
+                transform: skewY(-15deg) translateY(-33%);
+            }
+            @include respond-to((max-width: $max-tablet-65-breakpoint)){
+                transform: skewY(-15deg) translateY(-45%);
+            }
+            @include respond-to((max-width: $max-tablet-60-breakpoint)){
+                transform: skewY(-15deg) translateY(-48%);
+            }
+            @include respond-to((max-width: $max-tablet-50-breakpoint)){
+                transform: skewY(-15deg) translateY(-70%);
+            }
+            @include respond-to((max-width: $max-mobile-100-breakpoint)){
+                transform: skewY(-15deg) translateY(-90%);
+            }
+            @include respond-to((max-width: $max-mobile-80-breakpoint)){
+                transform: skewY(-15deg) translateY(-130%);
+            }
+            @include respond-to((max-width: $max-mobile-75-breakpoint)){
+                transform: skewY(-15deg) translateY(-170%);
+            }
+            @include respond-to((max-width: $max-mobile-65-breakpoint)){
+                transform: skewY(-15deg) translateY(-186%);
+            } 
+            @include respond-to((max-width: $max-mobile-60-breakpoint)){
+                transform: skewY(-15deg) translateY(-212%);
+            } 
+        }
+    }
+}

@@ -4,7 +4,7 @@
 @import '../variable.scss';
 
 .container {
-    section.all-course {
+    & > section.all-course {
         & > .logo {
             @include page-container;
             margin-top: 60px;
@@ -106,16 +106,16 @@
                     font-size: 1.8rem;
                     @include button($height-size: "large");
                     color: #018BF6;
-                    padding-top: 8px;
+                    padding-top: 3px;
                     @include respond-to((max-width: $max-tablet-100-breakpoint)){
                         @include button($height-size: "medium");
                         font-size: 1.125rem;
                         margin: auto;
-                        padding-top: 8px;
+                        padding-top: 3px;
                     }
                     @include respond-to((max-width: $max-mobile-80-breakpoint)){
                         padding: 0 18px;
-                        padding-top: 8px;
+                        padding-top: 3px;
                     }
                 }
                 & > .arrow_down {
@@ -205,17 +205,17 @@
             }
         }
         & > .background {
-            @include respond-to((max-width: $max-pc-35-breakpoint)){
-                transform: skewY(-15deg);
-            }
             background: linear-gradient(90deg, #018BF6, #34DCFC);
             transform: skewY(-5deg);
             transform-origin: bottom left;
-            width: 300vw;
+            width: 100vw;
             min-height: 100%;
             position: absolute;
             bottom: 0;
             z-index: -1;
+            @include respond-to((max-width: $max-pc-35-breakpoint)){
+                transform: skewY(-15deg);
+            }
         } 
     }
 }

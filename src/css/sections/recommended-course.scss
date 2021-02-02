@@ -85,8 +85,19 @@
             @include page-container;
             left: 0;
             right: 0;
+            @include respond-to((max-width: $max-pc-35-breakpoint)){
+                top: 0;
+                transform: translateY(-20%);
+            }
             @include respond-to((max-width: $max-tablet-100-breakpoint)){
                 flex-direction: column;
+                transform: translateY(0%);
+            }
+            @include respond-to((max-width: $max-tablet-80-breakpoint)){
+                transform: translateY(-3%);
+            }
+            @include respond-to((max-width: $max-tablet-70-breakpoint)){
+                transform: translateY(0%);
             }
             & > figure {
                 flex: 1;
@@ -96,6 +107,8 @@
                 margin-right: 200px;
                 @include respond-to((max-width: $max-pc-35-breakpoint)){
                     margin-left: 128px;
+                    max-width: 593px;
+                    padding-top: 10%;
                 }
                 @include respond-to((max-width: $max-pc-30-breakpoint)){
                     margin-left: 96px;
@@ -103,9 +116,9 @@
                 }
                 @include respond-to((max-width: $max-tablet-100-breakpoint)){
                     margin: auto;
-                    margin-top: 68px;
-                    padding-left: 200px;
-                    padding-right: 200px;
+                    padding-left: 100px;
+                    padding-right: 100px;
+                    padding-top: 0;
                 }
                 @include respond-to((max-width: $max-tablet-70-breakpoint)){
                     padding-left: 96px;
@@ -127,15 +140,13 @@
                 font-family: supermarket;
                 @include respond-to((max-width: $max-pc-35-breakpoint)){
                     margin-right: 98px;
-                    padding: 74px 106px;
-                }
-                @include respond-to((max-width: $max-pc-35-breakpoint)){
-                    padding: 40px 30px;
+                    height: fit-content;
                 }
                 @include respond-to((max-width: $max-tablet-100-breakpoint)){
                     margin: auto;
                     margin-top: 10px;
                     box-shadow: none;
+                    padding: 40px 30px 0 30px;
                 }
                 & > .title {
                     display: flex;
@@ -214,7 +225,7 @@
                     color: white;
                     margin: auto;
                     margin-top: 118px;
-                    padding-top: 8px;
+                    padding-top: 3px;
                     @include respond-to((max-width: $max-pc-35-breakpoint)){
                         font-size: 1.8rem;
                         margin-top: 84px;
@@ -223,8 +234,16 @@
                         font-size: 1.5rem;
                         margin-top: 54px;
                     }
+                    @include respond-to((max-width: $max-tablet-100-breakpoint)){
+                        @include button($height-size: "medium");
+                        padding: 3px 48px 0 48px;
+                        background-color: #018BF6;
+                        font-size: 1.125rem;
+                        font-weight: 400;
+                    }
                     @include respond-to((max-width: $max-mobile-100-breakpoint)){
                         font-size: 1rem;
+                        padding: 3px 18px 0 18px;
                     }
                 }
             }
