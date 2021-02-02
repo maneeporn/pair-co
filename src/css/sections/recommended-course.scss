@@ -6,6 +6,7 @@
 .container {
     & > section.recommended-course {
         width: 100%;
+        position: relative;
         & > .background {
             transform: skewY(-5deg);
             background: white;
@@ -36,7 +37,7 @@
                 margin-bottom: calc(11.5%);
             }
             @include respond-to((max-width: $max-tablet-100-breakpoint)){
-                margin-bottom: calc(8.5%);
+                margin-bottom: calc(9%);
             }
             @include respond-to((max-width: $max-tablet-95-breakpoint)){
                 margin-bottom: calc(7%);
@@ -75,6 +76,157 @@
             @include respond-to((max-width: $max-mobile-60-breakpoint)){
                 height: 100px;
                 margin-bottom: calc(9%);
+            }
+        }
+        & > .content {
+            position: absolute;
+            z-index: 2;
+            display: flex;
+            @include page-container;
+            left: 0;
+            right: 0;
+            @include respond-to((max-width: $max-tablet-100-breakpoint)){
+                flex-direction: column;
+            }
+            & > figure {
+                flex: 1;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-end;
+                margin-right: 200px;
+                @include respond-to((max-width: $max-pc-35-breakpoint)){
+                    margin-left: 128px;
+                }
+                @include respond-to((max-width: $max-pc-30-breakpoint)){
+                    margin-left: 96px;
+                    margin-right: 100px;
+                }
+                @include respond-to((max-width: $max-tablet-100-breakpoint)){
+                    margin: auto;
+                    margin-top: 68px;
+                    padding-left: 200px;
+                    padding-right: 200px;
+                }
+                @include respond-to((max-width: $max-tablet-70-breakpoint)){
+                    padding-left: 96px;
+                    padding-right: 96px;
+                }
+                @include respond-to((max-width: $max-mobile-100-breakpoint)){
+                    padding-left: 64px;
+                    padding-right: 64px;
+                }
+                & > img {
+                    width: 100%;
+                }
+            }
+            & > .course {
+                flex: 1;
+                box-shadow: 0 -24px 24px 0px rgba(8, 126, 199, 0.3);;
+                clip-path: inset(1px -30px 1px -30px);
+                padding: 0 106px;
+                font-family: supermarket;
+                @include respond-to((max-width: $max-pc-35-breakpoint)){
+                    margin-right: 98px;
+                    padding: 74px 106px;
+                }
+                @include respond-to((max-width: $max-pc-35-breakpoint)){
+                    padding: 40px 30px;
+                }
+                @include respond-to((max-width: $max-tablet-100-breakpoint)){
+                    margin: auto;
+                    margin-top: 10px;
+                    box-shadow: none;
+                }
+                & > .title {
+                    display: flex;
+                    justify-content: center;
+                    & > div:first-child {
+                        color: #FEC449;
+                        font-size: 15.6rem;
+                        @include respond-to((max-width: $max-pc-35-breakpoint)){
+                            font-size: 12.5rem;
+                        }
+                        @include respond-to((max-width: $max-pc-30-breakpoint)){
+                            font-size: 9rem;   
+                        }
+                        @include respond-to((max-width: $max-mobile-100-breakpoint)){
+                            font-size: 6rem;
+                        }
+                    }
+                    & > div:last-child {
+                        color: #686868;
+                        font-size: 4.5rem;
+                        display: grid;
+                        line-height: 100%;
+                        padding-bottom: 30px;
+                        padding-top: 12px;
+                        @include respond-to((max-width: $max-pc-35-breakpoint)){
+                            font-size: 4rem;
+                        }
+                        @include respond-to((max-width: $max-pc-30-breakpoint)){
+                            font-size: 3rem;
+                        }
+                        @include respond-to((max-width: $max-mobile-100-breakpoint)){
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+                & > .sub-title {
+                    text-align: center;
+                    font-size: 4rem;
+                    color: #018BF6;
+                    margin-top: 24px;
+                    @include respond-to((max-width: $max-pc-35-breakpoint)){
+                        font-size: 3rem;
+                        margin-top: 20px;
+                    }
+                    @include respond-to((max-width: $max-pc-30-breakpoint)){
+                        font-size: 2.25rem;
+                        margin-top: 0;
+                    }
+                    @include respond-to((max-width: $max-mobile-100-breakpoint)){
+                        font-size: 1.5rem;
+                    }
+                }
+                & > .description {
+                    display: grid;
+                    text-align: center;
+                    font-size: 2.25rem;
+                    margin-top: 64px;
+                    line-height: 125%;
+                    color: rgba(104, 104, 104, 0.7);
+                    @include respond-to((max-width: $max-pc-35-breakpoint)){
+                        font-size: 1.6rem;
+                        margin-top: 42px;
+                    }
+                    @include respond-to((max-width: $max-pc-30-breakpoint)){
+                        font-size: 1.5rem;
+                        margin-top: 32px;
+                    }
+                    @include respond-to((max-width: $max-mobile-100-breakpoint)){
+                        font-size: 1rem;
+                    }
+                }
+                & > .btn {
+                    font-size: 2.25rem;
+                    @include button($height-size: "large");
+                    background-color: #018BF6;
+                    color: white;
+                    margin: auto;
+                    margin-top: 118px;
+                    padding-top: 8px;
+                    @include respond-to((max-width: $max-pc-35-breakpoint)){
+                        font-size: 1.8rem;
+                        margin-top: 84px;
+                    }
+                    @include respond-to((max-width: $max-pc-30-breakpoint)){
+                        font-size: 1.5rem;
+                        margin-top: 54px;
+                    }
+                    @include respond-to((max-width: $max-mobile-100-breakpoint)){
+                        font-size: 1rem;
+                    }
+                }
             }
         }
     }
