@@ -1,0 +1,147 @@
+@import '../font.scss';
+@import '../mixnis.scss';
+@import '../color.scss';
+@import '../variable.scss';
+
+.container {
+    & > section.one-plus-one {
+        @include page-container;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: auto;
+        z-index: 3;
+        transform: translateY(360%);
+        margin-top: 500px;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 10px solid #27C7FB;
+        border-radius: 50%;
+        height: 900px;
+        width: 900px;
+        @include respond-to((max-width: $max-pc-75-breakpoint)){
+            transform: translateY(333%);
+        }
+        @include respond-to((max-width: $max-pc-60-breakpoint)){
+            transform: translateY(320%);
+        }
+        @include respond-to((max-width: $max-pc-50-breakpoint)){
+            transform: translateY(300%);
+        }
+        @include respond-to((max-width: $max-pc-45-breakpoint)){
+            transform: translateY(292%);
+        }
+        @include respond-to((max-width: $max-pc-35-breakpoint)){
+            margin-top: 320px;
+            height: 658px;
+            width: 658px;
+            transform: translateY(395%);
+        }
+        @include respond-to((max-width: $max-pc-25-breakpoint)){
+            height: 494px;
+            width: 494px;
+            transform: translateY(422%);
+        }
+        @include respond-to((max-width: $max-tablet-100-breakpoint)){
+            height: 344px;
+            width: 344px;
+            transform: translateY(776%);
+        }
+        @include respond-to((max-width: $max-tablet-80-breakpoint)){
+            transform: translateY(755%);
+        }
+        @include respond-to((max-width: $max-tablet-70-breakpoint)){
+            transform: translateY(708%);
+        }
+        @include respond-to((max-width: $max-tablet-65-breakpoint)){
+            transform: translateY(688%);
+        }
+        @include respond-to((max-width: $max-tablet-60-breakpoint)){
+            transform: translateY(676%);
+        }
+        @include respond-to((max-width: $max-tablet-50-breakpoint)){
+            transform: translateY(588%);
+        }
+        @include respond-to((max-width: $max-mobile-100-breakpoint)){
+            transform: translateY(512%);
+        }
+        @include respond-to((max-width: $max-mobile-80-breakpoint)){
+            transform: translateY(480%);
+        }
+        @include respond-to((max-width: $max-mobile-75-breakpoint)){
+            transform: translateY(446%);
+        }
+        @include respond-to((max-width: $max-mobile-65-breakpoint)){
+            margin-top: 300px;
+            height: 280px;
+            width: 280px;
+            transform: translateY(528%);
+        }
+        @include respond-to((max-width: $max-mobile-60-breakpoint)){
+            transform: translateY(500%);
+        }
+        & > .circle {
+            & > .title {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: -webkit-linear-gradient(#27C7FB 50%, #018BF6);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-family: francoisOne;
+                font-size: 18rem;
+                @include respond-to((max-width: $max-pc-35-breakpoint)){
+                    font-size: 12.5rem;
+                }
+                @include respond-to((max-width: $max-pc-25-breakpoint)){
+                    font-size: 10rem;
+                }
+                @include respond-to((max-width: $max-pc-100-breakpoint)){
+                    font-size: 6rem;
+                }
+                @include respond-to((max-width: $max-mobile-65-breakpoint)){
+                    font-size: 4rem;
+                }
+                & > div:first-child, & > div:last-child{
+                    font-size: 21.875rem;
+                    @include respond-to((max-width: $max-pc-35-breakpoint)){
+                        font-size: 18rem;
+                    }
+                    @include respond-to((max-width: $max-pc-25-breakpoint)){
+                        font-size: 11.25rem;
+                    }
+                    @include respond-to((max-width: $max-tablet-100-breakpoint)){
+                        font-size: 9rem;
+                    }
+                    @include respond-to((max-width: $max-mobile-65-breakpoint)){
+                        font-size: 7rem;
+                    }
+                }
+            }
+            & > .description {
+                font-size: 4rem;
+                font-family: supermarket;
+                text-align: center;
+                color: #686868;
+                letter-spacing: 12px;
+                @include respond-to((max-width: $max-pc-35-breakpoint)){
+                    font-size: 3rem;
+                }
+                @include respond-to((max-width: $max-pc-25-breakpoint)){
+                    font-size: 2.25rem;
+                }
+                @include respond-to((max-width: $max-pc-100-breakpoint)){
+                    font-size: 1.5rem;
+                    letter-spacing: 6px;
+                }
+                @include respond-to((max-width: $max-mobile-65-breakpoint)){
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

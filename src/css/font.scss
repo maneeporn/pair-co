@@ -1,5 +1,3 @@
-// $font-main: supermarket;
-
 @font-face {
     font-family: supermarket;
     src: url(../fonts/supermarket.ttf);
@@ -60,5 +58,22 @@
     font-family: arabica;
     font-weight: 900;
     src: url(../fonts/Arabica.ttf);
+}
+
+@font-face {
+    font-family: francoisOne;
+    src: url(../fonts/FrancoisOne.ttf);
+}
+
+@font-face {
+    font-family: francoisOne;
+    font-weight: 700;
+    src: url(../fonts/FrancoisOne.ttf);
+}
+
+@font-face {
+    font-family: francoisOne;
+    font-weight: 900;
+    src: url(../fonts/FrancoisOne.ttf);
 }
 
