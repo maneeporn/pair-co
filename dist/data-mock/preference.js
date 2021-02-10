@@ -1,30 +1,30 @@
 var preference = [
     {
-        "name": "Hola",
+        "name": "Keyboards",
         "description": "ขอเวลาอีกไม่นาน เพื่อแผ่นดินที่งดงามจะคืนกลับมา...",
         "image": [
-            "https://i.pinimg.com/564x/eb/2b/c7/eb2bc721d99c39428a9a78c48c7cdbe0.jpg"
+            "https://i.pinimg.com/564x/e1/8a/52/e18a52b500a3417d9f45dd16913812d8.jpg"
         ]
     },
     {
-        "name": "Prendetel",
+        "name": "Guitar",
         "description": "ขอเวลาอีกไม่นาน เพื่อแผ่นดินที่งดงามจะคืนกลับมา...",
         "image": [
-            "https://i.pinimg.com/474x/3c/0f/0e/3c0f0e09502ee17496e216fdd7280811.jpg"
+            "https://i.pinimg.com/474x/9d/44/8e/9d448e7ed937fdae84ebc5db0b49f795.jpg"
         ]
     },
     {
-        "name": "Son las 5",
+        "name": "Drums",
         "description": "ขอเวลาอีกไม่นาน เพื่อแผ่นดินที่งดงามจะคืนกลับมา...",
         "image": [
-            "https://i.pinimg.com/474x/d6/f0/e3/d6f0e3e58e5c15d1e480c4a9a2bf1a2b.jpg"
+            "https://i.pinimg.com/474x/50/7c/be/507cbeea25a29fce7ca0f34fd05e3f6f.jpg"
         ]
     },
     {
-        "name": "test",
+        "name": "Base",
         "description": "ขอเวลาอีกไม่นาน เพื่อแผ่นดินที่งดงามจะคืนกลับมา...",
         "image": [
-            "https://i.pinimg.com/474x/3c/0f/0e/3c0f0e09502ee17496e216fdd7280811.jpg"
+            "https://i.pinimg.com/474x/75/18/c5/7518c5426f06f519e6c9d121d95051e2.jpg"
         ]
     },
     {
