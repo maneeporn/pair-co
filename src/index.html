@@ -13,6 +13,7 @@
     <link href="/css/sections/one-plus-one.css" rel="stylesheet">
     <link href="/css/sections/quotes.css" rel="stylesheet">
     <link href="/css/sections/preference.css" rel="stylesheet">
+    <link href="/css/sections/labo.css" rel="stylesheet">
     <title>Pair-Co</title>
 </head>
 <body>
@@ -144,5 +145,87 @@
             </div>
             <div class="btn">ดูทั้งหมด</div>
         </section>
+        <section class="labo">
+            <div class="content">
+                <div class="header">
+                    <div class="title" data-aos="fade-up">PAIR-CO LABO</div>
+                    <div class="sub-title" data-aos="fade-up" data-aos-delay="200">เรียนรู้ไปพร้อมกับเรา</div>
+                </div>
+                <div class="carousel" data-aos="fade-up" data-aos-delay="200">
+                    <div class="prev" id="prev">
+                        <img src="./assets/right-arrow.svg" />
+                    </div>
+                    <div id="labo">
+                    </div>
+                    <div class="next" id="next">
+                        <img src="./assets/right-arrow.svg" />
+                    </div>
+                </div>
+                <div class="button">ดูทั้งหมด</div>
+            </div>
+        </section>
     </div>
 </body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="text/javascript" src="./data-mock/labo.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+    });
+    function contentLabo() {
+        var content = ""
+        for (i = 0; i < 3; i++){
+            if (labo[i]){
+                console.log(labo[i].image[0])
+                content += `
+                <div class="active ${i}" style="background-image: url('${labo[i].image[0]}');">
+                    <div class="description">
+                        <span>${labo[i].name}</span>
+                        <span>${labo[i].date}</span>
+                    </div>
+                </div>`
+            }
+        }
+        return content
+    }
+    $("#labo").append(`
+        <div class="content">
+            ${contentLabo()}
+        </div>
+    `);
+    $("#next").click(function(){
+        lastImg = $('.active').last().prevObject[2].classList[1]
+        nextImg = Number(lastImg) + 1
+        if(nextImg == labo.length){
+            nextImg = 0
+        }
+        $(".active").first().remove()
+        $(".active").attr("data-aos","fade-left")
+        $("#labo .content").append(`
+            <div class="active ${nextImg}" data-aos="fade-left" style="background-image: url('${labo[nextImg].image[0]}');">
+                <div class="description">
+                    <span>${labo[nextImg].name}</span>
+                    <span>${labo[nextImg].date}</span>
+                </div>
+            </div>
+        `);
+    });
+    $("#prev").click(function(){
+        firstImg = $('.active').first().prevObject[0].classList[1]
+        console.log(firstImg)
+        prevImg = Number(firstImg) - 1
+        if(prevImg < 0){
+            prevImg = labo.length - 1
+        }
+        $(".active").last().remove()
+        $(".active").attr("data-aos","fade-right")
+        $(`#labo .content .${firstImg}`).before(`
+            <div class="active ${prevImg}" data-aos="fade-right" style="background-image: url('${labo[prevImg].image[0]}');">
+                <div class="description">
+                    <span>${labo[prevImg].name}</span>
+                    <span>${labo[prevImg].date}</span>
+                </div>
+            </div>
+        `);
+    });
+</script>

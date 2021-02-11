@@ -1,0 +1,251 @@
+@import '../font.scss';
+@import '../mixnis.scss';
+@import '../color.scss';
+@import '../variable.scss';
+
+.container {
+    & > section.labo {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        left: 0;
+        width: 100%;
+        transform: translateY(400%);
+        background-image: url(../../assets/wave.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 1614px;
+        @include respond-to((max-width: $max-pc-80-breakpoint)){
+            transform: translateY(395%);
+        }
+        @include respond-to((max-width: $max-pc-60-breakpoint)){
+            transform: translateY(388%);
+        }
+        @include respond-to((max-width: $max-pc-50-breakpoint)){
+            transform: translateY(382%);
+        }
+        @include respond-to((max-width: $max-pc-45-breakpoint)){
+            transform: translateY(375%);
+        }
+        @include respond-to((max-width: $max-pc-35-breakpoint)){
+            height: 1116px;
+            transform: translateY(450%);
+        }
+        @include respond-to((max-width: $max-pc-30-breakpoint)){
+            height: 836px;
+            transform: translateY(575%);
+        }
+        @include respond-to((max-width: $max-pc-25-breakpoint)){
+            transform: translateY(545%);
+        }
+        @include respond-to((max-width: $max-pc-20-breakpoint)){
+            transform: translateY(515%);
+        }
+        @include respond-to((max-width: $max-tablet-100-breakpoint)){
+            max-height: 1516px;
+            height: 100%;
+            transform: translateY(318%);
+        }
+        @include respond-to((max-width: $max-tablet-80-breakpoint)){
+            transform: translateY(288%);
+        }
+        @include respond-to((max-width: $max-tablet-70-breakpoint)){
+            transform: translateY(355%);
+        }
+        @include respond-to((max-width: $max-tablet-65-breakpoint)){
+            transform: translateY(370%);
+        }
+        @include respond-to((max-width: $max-tablet-60-breakpoint)){
+            transform: translateY(390%);
+        }
+        @include respond-to((max-width: $max-tablet-50-breakpoint)){
+            transform: translateY(490%);
+        }
+        @include respond-to((max-width: $max-mobile-100-breakpoint)){
+            background-image: url(../../assets/mini_wave.png);
+            transform: translateY(245%);
+            height: 1392px;
+            background-position-x: 47%;
+        }
+        @include respond-to((max-width: $max-mobile-80-breakpoint)){
+            transform: translateY(240%);
+        }
+        @include respond-to((max-width: $max-mobile-75-breakpoint)){
+            transform: translateY(242%);
+        }
+        @include respond-to((max-width: $max-mobile-65-breakpoint)){
+            transform: translateY(232%);
+        }
+        @include respond-to((max-width: $max-mobile-60-breakpoint)){
+            transform: translateY(222%);
+        }
+        & > .content {
+            position: absolute;
+            left: 0;
+            right: 0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            align-items: center;
+            @include page-container;
+            & > .header {
+                & > .title {
+                    font-family: arabica;
+                    font-size: 9rem;
+                    text-shadow: 8px 2px $yellow;
+                    color: $main-color-dark;
+                    @include respond-to((max-width: $max-pc-35-breakpoint)){
+                        font-size: 6rem;
+                    }
+                    @include respond-to((max-width: $max-pc-30-breakpoint)){
+                        font-size: 4rem;
+                    }
+                }
+                & > .sub-title {
+                    font-family: supermarket;
+                    font-size: 4rem;
+                    color: $dark-main;
+                    margin-top: 8px;
+                    @include respond-to((max-width: $max-pc-35-breakpoint)){
+                        font-size: 3rem;
+                    }
+                    @include respond-to((max-width: $max-pc-30-breakpoint)){
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+            & > .carousel {
+                display: flex;
+                align-items: center;
+                margin-top: 48px;
+                & > .prev {
+                    width: 30px;
+                    height: 50px;
+                    transform: rotate(180deg);
+                    margin-right: 94px;
+                    @include respond-to((max-width: $max-pc-40-breakpoint)){
+                        margin-right: 58px;
+                    }
+                    @include respond-to((max-width: $max-tablet-100-breakpoint)){
+                        display: none;
+                    }
+                    img {
+                        width: 100%;
+                    }
+                }
+                & > #labo{
+                    & > .content {
+                        display: flex;
+                        column-gap: 32px;
+                        height: 684px;
+                        @include respond-to((max-width: $max-pc-50-breakpoint)){
+                            height: 556px;
+                        }
+                        @include respond-to((max-width: $max-pc-40-breakpoint)){
+                            height: 428px;
+                        }
+                        @include respond-to((max-width: $max-pc-30-breakpoint)){
+                            height: 315px;
+                        }
+                        @include respond-to((max-width: $max-tablet-100-breakpoint)){
+                            flex-direction: column;
+                            height: unset;
+                        }
+                        & > div {
+                            width: 684px;
+                            border-radius: 20px;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;
+                            @include respond-to((max-width: $max-pc-50-breakpoint)){
+                                width: 556px;
+                            }
+                            @include respond-to((max-width: $max-pc-40-breakpoint)){
+                                width: 428px;
+                            }
+                            @include respond-to((max-width: $max-pc-30-breakpoint)){
+                                width: 315px;
+                            }
+                            @include respond-to((max-width: $max-tablet-100-breakpoint)){
+                                height: 315px;
+                                margin-bottom: 26px;
+                            }
+                            @include respond-to((max-width: $max-mobile-100-breakpoint)){
+                                height: 264px;
+                                width: 264px;
+                            }
+                            .description {
+                                padding: 40px;
+                                flex-direction: column;
+                                justify-content: flex-end;
+                                align-items: flex-start;
+                                text-align: left;
+                                color: $light;
+                                background-image: linear-gradient(transparent 50%, black );
+                                width: 100%;
+                                display: flex;
+                                border-radius: 10px;
+                                height: 100%;
+                                font-family: supermarket;
+                                @include respond-to((max-width: $max-pc-35-breakpoint)){
+                                    padding: 24px;
+                                }
+                                & > span:first-child {
+                                    font-size: 3rem;
+                                    margin-bottom: 24px;
+                                    @include respond-to((max-width: $max-pc-35-breakpoint)){
+                                        font-size: 2.25rem;
+                                        margin-bottom: 8px;
+                                    }
+                                }
+                                & > span:last-child {
+                                    font-size: 1.5rem;
+                                    @include respond-to((max-width: $max-pc-35-breakpoint)){
+                                        font-size: 1.125rem;
+                                    }
+                                }
+                            }
+                        }
+                        & > .hide {
+                            display: none;
+                        }
+                    }
+                }
+                & > .next {
+                    width: 30px;
+                    height: 50px;
+                    margin-left: 94px;
+                    @include respond-to((max-width: $max-pc-40-breakpoint)){
+                        margin-left: 58px;
+                    }
+                    @include respond-to((max-width: $max-tablet-100-breakpoint)){
+                        display: none;
+                    }
+                    & > img {
+                        width: 100%;
+                    }
+                }
+            }
+            & > .button {
+                @include button($height-size: "large", $width-size: max-content);
+                display: block;
+                color: $main-color-dark;
+                margin: 64px auto;
+                margin-top: 35px;
+                border: 1px solid $main-color-dark;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 120px;
+                font-family: supermarket;
+                font-size: 1.125rem;
+                height: 40px;
+                padding: 0 24px;
+            }
+        }
+    }
+}
