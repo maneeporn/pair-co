@@ -10,3 +10,6 @@ html body {
   position: relative;
   overflow-x: hidden;
   height: 100%; }
+  .container > section.course {
+    position: relative;
+    height: fit-content; }
