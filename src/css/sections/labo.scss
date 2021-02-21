@@ -11,7 +11,7 @@
         align-items: center;
         height: 100%;
         width: 100%;
-        background-image: url(../../assets/wave.png);
+        background-image: url(../../assets/images/wave.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -27,7 +27,7 @@
             height: 100%;
         }
         @include respond-to((max-width: $max-mobile-100-breakpoint)){
-            background-image: url(../../assets/mini_wave.png);
+            background-image: url(../../assets/images/mini_wave.png);
             height: 1392px;
             background-position-x: 47%;
         }
