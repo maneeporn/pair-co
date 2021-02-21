@@ -10,24 +10,49 @@
         z-index: 20;
         left: 0;
         right: 0;
-        transform: translateY(1312%);
-        padding-top: 280px;
-        background: chocolate;
+        margin-top: 280px;
+        @include respond-to((max-width: $max-pc-35-breakpoint)){
+            margin-top: 180px;
+        }
+        @include respond-to((max-width: $max-pc-25-breakpoint)){
+            margin-top: 143px;
+        }
+        @include respond-to((max-width: $max-mobile-100-breakpoint)){
+            margin-top: 28px;
+        }
         & > .title {
             font-size: 48px;
             text-align: center;
             font-family: kanit;
             color: #5A5A5A;
+            @include respond-to((max-width: $max-pc-35-breakpoint)){
+                font-size: 36px;
+            }
+            @include respond-to((max-width: $max-pc-25-breakpoint)){
+                font-size: 24px;
+            }
+            @include respond-to((max-width: $max-mobile-100-breakpoint)){
+                font-size: 18px;
+            }
         }
         & > .content {
             display: grid;
             grid-template-columns: auto auto auto;
             align-items: center;
             margin-top: 48px;
+            @include respond-to((max-width: $max-tablet-50-breakpoint)){
+                grid-template-columns: auto;
+                margin-top: 36px;
+            }
             & > .logo {
                 flex: 1;
                 display: flex;
                 justify-content: center;
+                @include respond-to((max-width: $max-tablet-50-breakpoint)){
+                   max-width: 100px;
+                   margin-left: auto;
+                   margin-right: auto;
+                }
             }
             & > .logo.odds {
                 & > img {
@@ -47,21 +72,6 @@
                     width: 100%;
                 }
             }
-        }
-        @include respond-to((max-width: $max-pc-80-breakpoint)){
-            transform: translateY(1265%);
-        }
-        @include respond-to((max-width: $max-pc-60-breakpoint)){
-            transform: translateY(1248%);
-        }
-        @include respond-to((max-width: $max-pc-50-breakpoint)){
-            transform: translateY(1232%);
-        }
-        @include respond-to((max-width: $max-pc-45-breakpoint)){
-            transform: translateY(1214%);
-        }
-        @include respond-to((max-width: $max-pc-35-breakpoint)){
-            transform: translateY(972%);
         }
     }
 }
