@@ -6,77 +6,23 @@
 .container {
     & > section.preference {
         @include page-container;
-        position: absolute;
-        z-index: 4;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        transform: translateY(385%);
+        position: relative;
         height: 100%;
         padding-top: 185px;
         padding-bottom: 185px;
-        @include respond-to((max-width: $max-pc-80-breakpoint)){
-            transform: translateY(415%);
-        }
-        @include respond-to((max-width: $max-pc-60-breakpoint)){
-            transform: translateY(408%);
-        }
-        @include respond-to((max-width: $max-pc-50-breakpoint)){
-            transform: translateY(450%);
-        }
-        @include respond-to((max-width: $max-pc-45-breakpoint)){
-            transform: translateY(445%);
-        }
         @include respond-to((max-width: $max-pc-35-breakpoint)){
             padding-left: 275px;
             padding-right: 275px;
-            transform: translateY(390%);
-        }
-        @include respond-to((max-width: $max-pc-30-breakpoint)){
-            transform: translateY(390%);
         }
         @include respond-to((max-width: $max-pc-25-breakpoint)){
             padding-left: 100px;
             padding-right: 100px;
-            transform: translateY(460%);
-        }
-        @include respond-to((max-width: $max-pc-20-breakpoint)){
-            transform: translateY(434%);
-        }
-        @include respond-to((max-width: $max-tablet-100-breakpoint)){
-            transform: translateY(335%);
-        }
-        @include respond-to((max-width: $max-tablet-85-breakpoint)){
-            transform: translateY(344%);
-        }
-        @include respond-to((max-width: $max-tablet-80-breakpoint)){
-            transform: translateY(318%);
         }
         @include respond-to((max-width: $max-tablet-70-breakpoint)){
             padding: 50px 48px 100px 48px;
-            transform: translateY(338%);
-        }
-        @include respond-to((max-width: $max-tablet-65-breakpoint)){
-            transform: translateY(344%);
-        }
-        @include respond-to((max-width: $max-tablet-60-breakpoint)){
-            transform: translateY(350%);
-        }
-        @include respond-to((max-width: $max-tablet-50-breakpoint)){
-            transform: translateY(405%);
         }
         @include respond-to((max-width: $max-mobile-100-breakpoint)){
             padding: 50px 18px 100px 18px;
-            transform: translateY(370%);
-        }
-        @include respond-to((max-width: $max-mobile-80-breakpoint)){
-            transform: translateY(378%);
-        }
-        @include respond-to((max-width: $max-mobile-75-breakpoint)){
-            transform: translateY(398%);
-        }
-        @include respond-to((max-width: $max-mobile-65-breakpoint)){
-            transform: translateY(391%);
         }
         & > .title {
             display: flex;
@@ -112,11 +58,22 @@
             & > div:last-child {
                 color: #686868;
                 font-size: 2.25rem;
+                display: flex;
                 @include respond-to((max-width: $max-pc-35-breakpoint)){
                     font-size: 1.5rem;
                 }
                 @include respond-to((max-width: $max-tablet-70-breakpoint)){
                     display: none;
+                }
+                & > div:first-child {
+                    padding-top: 3px;
+                    line-height: 100%;
+                }
+                & > img {
+                    height: 2.25rem;
+                    @include respond-to((max-width: $max-pc-35-breakpoint)){
+                        height: 1.5rem;
+                    }
                 }
             }
         }
@@ -125,20 +82,19 @@
             grid-template-columns: 1fr 1fr;
             column-gap: 24px;
             height: 100%;
-            max-height: 1056px;
+            height: 1056px;
             @include respond-to((max-width: $max-pc-35-breakpoint)){
-                max-height: 692px;
+                height: 692px;
                 height: calc(50vw);
             }
             @include respond-to((max-width: $max-pc-25-breakpoint)){
-                max-height: 581px;
+                height: 581px;
             } 
             @include respond-to((max-width: $max-tablet-70-breakpoint)){
                 display: grid;
                 grid-template-columns: 1fr;
                 row-gap: 24px;
                 height: auto;
-                max-height: unset;
             }
             & > .right {
                 display: grid;
