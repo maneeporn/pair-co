@@ -68,6 +68,7 @@
                 display: flex;
                 align-items: center;
                 margin-top: 48px;
+                width: 100%;
                 & > .prev {
                     width: 30px;
                     height: 50px;
@@ -84,10 +85,12 @@
                     }
                 }
                 & > #labo{
+                    width: 100%;
                     & > .content {
                         display: flex;
                         column-gap: 32px;
                         height: 684px;
+                        width: 100%;
                         @include respond-to((max-width: $max-pc-50-breakpoint)){
                             height: 556px;
                         }
@@ -102,22 +105,26 @@
                             height: unset;
                         }
                         & > div {
-                            width: 684px;
+                            width: 100%;
                             border-radius: 20px;
                             background-repeat: no-repeat;
                             background-position: center;
                             background-size: cover;
                             @include respond-to((max-width: $max-pc-50-breakpoint)){
                                 width: 556px;
+                                width: 100%;
                             }
                             @include respond-to((max-width: $max-pc-40-breakpoint)){
                                 width: 428px;
+                                width: 100%;
                             }
                             @include respond-to((max-width: $max-pc-30-breakpoint)){
-                                width: 315px;
+                                width: 100%;
                             }
                             @include respond-to((max-width: $max-tablet-100-breakpoint)){
                                 height: 315px;
+                                width: 315px;
+                                margin: auto;
                                 margin-bottom: 26px;
                             }
                             @include respond-to((max-width: $max-mobile-100-breakpoint)){

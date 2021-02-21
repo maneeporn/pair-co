@@ -1,0 +1,73 @@
+@import '../font.scss';
+@import '../mixnis.scss';
+@import '../color.scss';
+@import '../variable.scss';
+
+.container {
+    & > section.footer {
+        background-image: url('../../assets/footer.png');
+        background-repeat: no-repeat;
+        height: 100%;
+        background-position: center top;
+        background-size: cover;
+        width: 100%;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        & > figure {
+            @include page-container;
+            margin-top: 0;
+            position: relative;
+            left: -11vw;
+            @include respond-to((max-width: $max-pc-50-breakpoint)){
+                left: 5vw;
+            }
+            @include respond-to((max-width: $max-pc-35-breakpoint)){
+                left: 0;
+            }
+            & > img {
+                width: 233px;
+                @include respond-to((max-width: $max-tablet-70-breakpoint)){
+                    width: 87px;
+                }
+            }
+        }
+        & > div {
+            @include page-container;
+            font-size: 24px;
+            font-family: supermarket;
+            color: white;
+            margin-top: 10px;
+            display: flex;
+            position: relative;
+            left: -11vw;
+            @include respond-to((max-width: $max-pc-50-breakpoint)){
+                left: 5vw;
+            }
+            @include respond-to((max-width: $max-pc-35-breakpoint)){
+                left: 0;
+            }
+            @include respond-to((max-width: $max-pc-25-breakpoint)){
+                font-size: 18px;
+            }
+            @include respond-to((max-width: $max-mobile-100-breakpoint)){
+                font-size: 12px;
+            }
+            & > img {
+                width: 20px;
+                height: 20px;
+                margin-right: 8px;
+                @include respond-to((max-width: $max-pc-25-breakpoint)){
+                    width: 15px;
+                    height: 15px;
+                }
+                @include respond-to((max-width: $max-mobile-100-breakpoint)){
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+            & > span {
+                padding-top: 3px;
+            }
+        }
+    }
+}

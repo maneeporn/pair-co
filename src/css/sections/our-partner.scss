@@ -6,19 +6,22 @@
 .container {
     & > section.our-partner {
         @include page-container;
-        position: absolute;
+        position: relative;
         z-index: 20;
         left: 0;
         right: 0;
         margin-top: 280px;
         @include respond-to((max-width: $max-pc-35-breakpoint)){
             margin-top: 180px;
+            margin-bottom: 180px;
         }
         @include respond-to((max-width: $max-pc-25-breakpoint)){
             margin-top: 143px;
+            margin-bottom: 143px;
         }
         @include respond-to((max-width: $max-mobile-100-breakpoint)){
             margin-top: 28px;
+            margin-bottom: 28px;
         }
         & > .title {
             font-size: 48px;
