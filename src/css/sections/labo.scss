@@ -5,87 +5,33 @@
 
 .container {
     & > section.labo {
-        position: absolute;
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100%;
-        left: 0;
         width: 100%;
-        transform: translateY(400%);
         background-image: url(../../assets/wave.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         height: 1614px;
-        @include respond-to((max-width: $max-pc-80-breakpoint)){
-            transform: translateY(395%);
-        }
-        @include respond-to((max-width: $max-pc-60-breakpoint)){
-            transform: translateY(388%);
-        }
-        @include respond-to((max-width: $max-pc-50-breakpoint)){
-            transform: translateY(382%);
-        }
-        @include respond-to((max-width: $max-pc-45-breakpoint)){
-            transform: translateY(375%);
-        }
         @include respond-to((max-width: $max-pc-35-breakpoint)){
             height: 1116px;
-            transform: translateY(450%);
         }
         @include respond-to((max-width: $max-pc-30-breakpoint)){
             height: 836px;
-            transform: translateY(575%);
-        }
-        @include respond-to((max-width: $max-pc-25-breakpoint)){
-            transform: translateY(545%);
-        }
-        @include respond-to((max-width: $max-pc-20-breakpoint)){
-            transform: translateY(515%);
         }
         @include respond-to((max-width: $max-tablet-100-breakpoint)){
             max-height: 1516px;
             height: 100%;
-            transform: translateY(318%);
-        }
-        @include respond-to((max-width: $max-tablet-80-breakpoint)){
-            transform: translateY(288%);
-        }
-        @include respond-to((max-width: $max-tablet-70-breakpoint)){
-            transform: translateY(355%);
-        }
-        @include respond-to((max-width: $max-tablet-65-breakpoint)){
-            transform: translateY(370%);
-        }
-        @include respond-to((max-width: $max-tablet-60-breakpoint)){
-            transform: translateY(390%);
-        }
-        @include respond-to((max-width: $max-tablet-50-breakpoint)){
-            transform: translateY(490%);
         }
         @include respond-to((max-width: $max-mobile-100-breakpoint)){
             background-image: url(../../assets/mini_wave.png);
-            transform: translateY(245%);
             height: 1392px;
             background-position-x: 47%;
         }
-        @include respond-to((max-width: $max-mobile-80-breakpoint)){
-            transform: translateY(240%);
-        }
-        @include respond-to((max-width: $max-mobile-75-breakpoint)){
-            transform: translateY(242%);
-        }
-        @include respond-to((max-width: $max-mobile-65-breakpoint)){
-            transform: translateY(232%);
-        }
-        @include respond-to((max-width: $max-mobile-60-breakpoint)){
-            transform: translateY(222%);
-        }
         & > .content {
-            position: absolute;
-            left: 0;
-            right: 0;
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -234,17 +180,15 @@
                 @include button($height-size: "large", $width-size: max-content);
                 display: block;
                 color: $main-color-dark;
-                margin: 64px auto;
-                margin-top: 35px;
+                margin: 35px auto 0 auto;
                 border: 1px solid $main-color-dark;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 width: 120px;
-                font-family: supermarket;
                 font-size: 1.125rem;
                 height: 40px;
-                padding: 0 24px;
+                padding: 5px 24px 0 24px;
             }
         }
     }
