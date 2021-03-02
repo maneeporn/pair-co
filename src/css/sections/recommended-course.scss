@@ -25,7 +25,7 @@
                 display: flex;
                 justify-content: flex-start;
                 align-items: flex-end;
-                margin-right: 200px;
+                margin-right: 104px;
                 @include respond-to((max-width: $max-pc-35-breakpoint)){
                     margin-left: 128px;
                     max-width: 593px;
@@ -57,11 +57,15 @@
                 flex: 1;
                 box-shadow: 0 -24px 24px 0px rgba(8, 126, 199, 0.3);;
                 clip-path: inset(1px -30px 1px -30px);
-                padding: 0 106px;
+                padding: 105px;
+                min-width: 1024px;
                 font-family: supermarket;
                 @include respond-to((max-width: $max-pc-35-breakpoint)){
                     margin-right: 98px;
-                    height: fit-content;
+                    max-width: 768px;
+                    padding-top: 74px;
+                    padding-bottom: 103px;
+                    margin-bottom: 124px;
                 }
                 @include respond-to((max-width: $max-tablet-100-breakpoint)){
                     margin: auto;
@@ -107,14 +111,14 @@
                     text-align: center;
                     font-size: 4rem;
                     color: #018BF6;
-                    margin-top: 24px;
+                    // margin-top: 24px;
                     @include respond-to((max-width: $max-pc-35-breakpoint)){
                         font-size: 3rem;
-                        margin-top: 20px;
+                        // margin-top: 20px;
                     }
                     @include respond-to((max-width: $max-pc-30-breakpoint)){
                         font-size: 2.25rem;
-                        margin-top: 0;
+                        // margin-top: 0;
                     }
                     @include respond-to((max-width: $max-mobile-100-breakpoint)){
                         font-size: 1.5rem;

@@ -42,7 +42,7 @@
                 & > .title {
                     text-align: center;
                     color: white;
-                    font-size: 3rem;
+                    font-size: 48px;
                     font-family: supermarket;
                     @include respond-to((max-width: $max-tablet-100-breakpoint)){
                         font-size: 2rem;
@@ -54,12 +54,19 @@
                     @include respond-to((max-width: $max-mobile-100-breakpoint)){
                         font-size: 1.125rem;
                     }
+                    & > span {
+                        padding-top: 6px;
+                    }
                 }
                 & > .btn {
                     @include button($height-size: "large");
                     color: $main-color-dark;
                     margin: auto;
                     margin-top: 35px;
+                    padding: 0 34px;
+                    padding-top: 6px;
+                    font-size: 36px;
+                    height: 76px;
                     @include respond-to((max-width: $max-tablet-100-breakpoint)){
                         @include button($height-size: "medium");
                         padding: 3px 48px 0 48px;

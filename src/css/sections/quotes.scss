@@ -46,12 +46,16 @@
                     & > span:first-child {
                         color: #018BF6;
                         font-size: 6rem;
+                        font-family: roboto;
                         @include respond-to((max-width: $max-pc-25-breakpoint)){
                             font-size: 5rem;
                         }
                         @include respond-to((max-width: $max-tablet-100-breakpoint)){
                             display: none;
                         }
+                    }
+                    & > span:last-child {
+                        color: $dark-main;
                     }
                 }
                 & > div:last-child {
@@ -77,6 +81,7 @@
                         padding-left: calc(103%);
                         margin-top: calc(-1%);
                         font-size: 6rem;
+                        font-family: roboto;
                         @include respond-to((max-width: $max-pc-25-breakpoint)){
                             font-size: 5rem;
                         }

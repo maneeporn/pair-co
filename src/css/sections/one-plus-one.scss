@@ -63,6 +63,9 @@
                 @include respond-to((max-width: $max-mobile-65-breakpoint)){
                     font-size: 4rem;
                 }
+                & > div:nth-child(2) {
+                    padding: 0 46px;
+                }
                 & > div:first-child, & > div:last-child{
                     font-size: 21.875rem;
                     @include respond-to((max-width: $max-pc-35-breakpoint)){
@@ -84,7 +87,7 @@
                 font-family: supermarket;
                 text-align: center;
                 color: #686868;
-                letter-spacing: 12px;
+                letter-spacing: 0.12em;
                 @include respond-to((max-width: $max-pc-35-breakpoint)){
                     font-size: 3rem;
                 }

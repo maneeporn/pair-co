@@ -17,11 +17,6 @@
   src: url(../fonts/Kanit-Regular.ttf); }
 
 @font-face {
-  font-family: kanit;
-  font-weight: 900;
-  src: url(../fonts/Kanit-Regular.ttf); }
-
-@font-face {
   font-family: roboto;
   src: url(../fonts/Roboto-LightItalic.ttf); }
 
@@ -31,11 +26,6 @@
   src: url(../fonts/Roboto-LightItalic.ttf); }
 
 @font-face {
-  font-family: roboto;
-  font-weight: 900;
-  src: url(../fonts/Roboto-Light.ttf); }
-
-@font-face {
   font-family: arabica;
   src: url(../fonts/Arabica.ttf); }
 
@@ -45,20 +35,10 @@
   src: url(../fonts/Arabica.ttf); }
 
 @font-face {
-  font-family: arabica;
-  font-weight: 900;
-  src: url(../fonts/Arabica.ttf); }
-
-@font-face {
   font-family: francoisOne;
   src: url(../fonts/FrancoisOne.ttf); }
 
 @font-face {
   font-family: francoisOne;
   font-weight: 700;
-  src: url(../fonts/FrancoisOne.ttf); }
-
-@font-face {
-  font-family: francoisOne;
-  font-weight: 900;
   src: url(../fonts/FrancoisOne.ttf); }

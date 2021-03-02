@@ -42,8 +42,8 @@
                 & > .title {
                     font-family: arabica;
                     font-size: 9rem;
-                    text-shadow: 8px 2px $yellow;
-                    color: $main-color-dark;
+                    text-shadow: -10px 4px $yellow;
+                    color: #018BF6;
                     @include respond-to((max-width: $max-pc-35-breakpoint)){
                         font-size: 6rem;
                     }
@@ -70,10 +70,8 @@
                 margin-top: 48px;
                 width: 100%;
                 & > .prev {
-                    width: 30px;
-                    height: 50px;
                     transform: rotate(180deg);
-                    margin-right: 94px;
+                    margin-right: 90px;
                     @include respond-to((max-width: $max-pc-40-breakpoint)){
                         margin-right: 58px;
                     }
@@ -81,28 +79,19 @@
                         display: none;
                     }
                     img {
-                        width: 100%;
+                        width: 26px;
+                        height: 50px;
                     }
                 }
                 & > #labo{
                     width: 100%;
                     & > .content {
-                        display: flex;
+                        display: grid;
                         column-gap: 32px;
-                        height: 684px;
                         width: 100%;
-                        @include respond-to((max-width: $max-pc-50-breakpoint)){
-                            height: 556px;
-                        }
-                        @include respond-to((max-width: $max-pc-40-breakpoint)){
-                            height: 428px;
-                        }
-                        @include respond-to((max-width: $max-pc-30-breakpoint)){
-                            height: 315px;
-                        }
+                        grid-template-columns: 1fr 1fr 1fr;
                         @include respond-to((max-width: $max-tablet-100-breakpoint)){
-                            flex-direction: column;
-                            height: unset;
+                            grid-template-columns: 1fr;
                         }
                         & > div {
                             width: 100%;
@@ -110,26 +99,10 @@
                             background-repeat: no-repeat;
                             background-position: center;
                             background-size: cover;
-                            @include respond-to((max-width: $max-pc-50-breakpoint)){
-                                width: 556px;
-                                width: 100%;
-                            }
-                            @include respond-to((max-width: $max-pc-40-breakpoint)){
-                                width: 428px;
-                                width: 100%;
-                            }
-                            @include respond-to((max-width: $max-pc-30-breakpoint)){
-                                width: 100%;
-                            }
+                            aspect-ratio: 1 / 1;
                             @include respond-to((max-width: $max-tablet-100-breakpoint)){
-                                height: 315px;
-                                width: 315px;
                                 margin: auto;
                                 margin-bottom: 26px;
-                            }
-                            @include respond-to((max-width: $max-mobile-100-breakpoint)){
-                                height: 264px;
-                                width: 264px;
                             }
                             .description {
                                 padding: 40px;
@@ -169,9 +142,7 @@
                     }
                 }
                 & > .next {
-                    width: 30px;
-                    height: 50px;
-                    margin-left: 94px;
+                    margin-left: 90px;
                     @include respond-to((max-width: $max-pc-40-breakpoint)){
                         margin-left: 58px;
                     }
@@ -179,7 +150,8 @@
                         display: none;
                     }
                     & > img {
-                        width: 100%;
+                        width: 26px;
+                        height: 50px;
                     }
                 }
             }
@@ -187,15 +159,15 @@
                 @include button($height-size: "large", $width-size: max-content);
                 display: block;
                 color: $main-color-dark;
-                margin: 35px auto 0 auto;
+                margin: 86px auto 0 auto;
                 border: 1px solid $main-color-dark;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 120px;
-                font-size: 1.125rem;
-                height: 40px;
-                padding: 5px 24px 0 24px;
+                font-size: 48px;
+                height: 102px;
+                padding: 6px 76px 0 76px;
+                font-family: arabica;
             }
         }
     }

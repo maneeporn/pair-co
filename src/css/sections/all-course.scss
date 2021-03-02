@@ -7,7 +7,7 @@
     & > section.all-course {
         width: 100%;
         height: 100%;
-        background: linear-gradient(90deg, #018BF6, #34DCFC);
+        background: linear-gradient(45deg, #018BF6, #34DCFC);
         transform: skewY(-5deg);
         position: relative;
         overflow: hidden;
@@ -31,6 +31,7 @@
             @include respond-to((max-width: $max-pc-35-breakpoint)){
                 transform: skewY(15deg);
                 top: 258px;
+                padding-left: 84px;
             }
             @include respond-to((max-width: $max-pc-25-breakpoint)){
                 margin-top: 50px;
@@ -39,7 +40,10 @@
                 margin-top: 44px;
             }
             & > img {
-                width: 233px;
+                width: 223px;
+                @include respond-to((max-width: $max-pc-35-breakpoint)){
+                    width: 185px;
+                }
                 @include respond-to((max-width: $max-tablet-70-breakpoint)){
                     width: 87px;
                 }
